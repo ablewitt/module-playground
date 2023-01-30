@@ -1,17 +1,18 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {LayoutComponent} from "./layout/layout.component";
-import {Aye1ComponentComponent} from "./aye1.component/aye1.component.component";
-import {Aye2ComponentComponent} from "./aye2.component/aye2.component.component";
+import {Aye1Component} from "./aye1/aye1.component";
+import {Aye2Component} from "./aye2/aye2.component";
+
 
 const routes: Routes = [
   {
     path: '', component: LayoutComponent, children: [
-      {path: 'aye1', component: Aye1ComponentComponent},
-      {path: 'aye2', component: Aye2ComponentComponent}
+      {path: 'aye1', component: Aye1Component},
+      {path: 'aye2', component: Aye2Component}
     ]
   },
-  {path: 'aye2', component: Aye2ComponentComponent}
+  {path: 'aye2', component: Aye2Component}
 ];
 
 

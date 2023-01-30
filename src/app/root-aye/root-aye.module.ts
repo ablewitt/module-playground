@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Aye1ComponentComponent } from './aye1.component/aye1.component.component';
 import { LayoutComponent } from './layout/layout.component';
 import { RootAyeRoutingModule } from './root-aye-routing.module';
-import { Aye2ComponentComponent } from './aye2.component/aye2.component.component';
+import { Aye1Component } from './aye1/aye1.component';
+import { Aye2Component } from './aye2/aye2.component';
 
 
 @NgModule({
   declarations: [
-    Aye1ComponentComponent,
     LayoutComponent,
-    Aye2ComponentComponent
+    Aye1Component,
+    Aye2Component
   ],
   imports: [
     CommonModule,
